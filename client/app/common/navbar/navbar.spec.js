@@ -1,7 +1,7 @@
 import NavbarModule from './navbar'
 import NavbarController from './navbar.controller';
 import NavbarComponent from './navbar.component';
-import NavbarTemplate from './navbar.html';
+import NavbarTemplate from './navbar.html!text';
 
 describe('Navbar', ()=>{
 	let $rootScope,

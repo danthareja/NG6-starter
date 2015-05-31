@@ -1,7 +1,7 @@
 import HomeModule from './home'
 import HomeController from './home.controller';
 import HomeComponent from './home.component';
-import HomeTemplate from './home.html';
+import HomeTemplate from './home.html!text';
 
 describe('Home', ()=>{
 	let $rootScope,

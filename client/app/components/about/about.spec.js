@@ -1,7 +1,7 @@
 import AboutModule from './about'
 import AboutController from './about.controller';
 import AboutComponent from './about.component';
-import AboutTemplate from './about.html';
+import AboutTemplate from './about.html!';
 
 describe('About', ()=>{
 	let $rootScope,

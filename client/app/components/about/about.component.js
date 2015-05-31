@@ -1,6 +1,6 @@
-import template from './about.html';
+import template from './about.html!text';
 import controller from './about.controller';
-import './about.styl';
+// import './about.styl!';
 
 let aboutComponent = function(){
 	return {
