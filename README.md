@@ -4,17 +4,21 @@
 
 # NG6 [![Join the chat at https://gitter.im/angular-class/NG6-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular-class/NG6-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Starter repo for [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [Webpack](http://webpack.github.io/)
+> Starter repo for [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/)
 
-This repo serves as an extremely minimal starter for anyone looking to get up and running with Angular and ES6. Using a combo of [Gulp](http://gulpjs.com/) and [Webpack](http://webpack.github.io/) for building our files and assisting with boilerplate.
+This repo serves as an extremely minimal starter for anyone looking to get up and running with Angular and ES6. Using a combo of [Gulp](http://gulpjs.com/) and [JSPM](http://jspm.io/) for building our files and assisting with boilerplate.
 **This seed is not a yeoman generator!** Its just a minimal starter with tasks to build and create boilerplate. **Features include**:
 * Best practice in file organization for Angular
+* Frictionless package management and module loader with [JSPM](http://jspm.io)
 * Ready to go build system for working with [ES6](https://git.io/es6features)
+<!---
 * Task for generating component boilerplate with angular, including test
 * Testing system ready to go
 * [Stylus](https://learnboost.github.io/stylus/) support
+-->
 
 > If you're looking for [Angular 2](https://angular.io/) please use [angular2-webpack-starter](https://github.com/angular-class/angular2-webpack-starter)
+> Check out the master branch for webpack instead of jspm
 
 ___
 
@@ -34,7 +38,7 @@ ___
 
 # Walkthrough
 ## Build System
-NG6 uses Gulp and Webpack together for its build system. Yes, you don't need Gulp if you're using Webpack. This is true if your build system is only responsible for file manipulation, which ours is not.
+This branch of NG6 uses the power of JSPM for our ES6/module uses Gulp and Webpack together for its build system. Yes, you don't need Gulp if you're using Webpack. This is true if your build system is only responsible for file manipulation, which ours is not.
 
 `Webpack` handles all the file related things. This inlcudes:
 * Transpiling from ES6 to ES5 with `Babel`
