@@ -100,6 +100,7 @@ Once you have those, you should install these globals with `npm i -g`:
 ## Installing
 * `fork` me
 * `clone` your fork
+* `git checkout jspm`
 * `npm i` to install all dependencies
 * (with JSPM there's usually a `jspm install` step too, but that is added to npm's `postinstall` for convenience)
 
