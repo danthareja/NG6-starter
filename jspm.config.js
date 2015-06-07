@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": ".",
+  "baseURL": "./",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
@@ -7,20 +7,22 @@ System.config({
     ]
   },
   "paths": {
-    "*": "*.js",
-    "github:*": "../jspm_packages/github/*.js",
-    "npm:*": "../jspm_packages/npm/*.js"
-  }
+    "*": "*",
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
+  "defaultJSExtensions": true
 });
 
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.4.0",
+    "angular-mocks": "npm:angular-mocks@1.4.0",
     "angular-ui-router": "npm:angular-ui-router@0.2.15",
     "babel": "npm:babel-core@5.4.7",
     "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.13",
-    "css": "github:systemjs/plugin-css@0.1.11",
+    "css": "github:systemjs/plugin-css@0.1.12",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -62,9 +64,9 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "github:necolas/normalize.css@3.0.3": {
-      "css": "github:systemjs/plugin-css@0.1.11"
+      "css": "github:systemjs/plugin-css@0.1.12"
     },
-    "github:systemjs/plugin-css@0.1.11": {
+    "github:systemjs/plugin-css@0.1.12": {
       "clean-css": "npm:clean-css@3.1.9",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0"
