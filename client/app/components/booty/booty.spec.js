@@ -1,20 +1,18 @@
-// Have to import angular first before angular-mocks
-// https://github.com/Workiva/karma-jspm/issues/23
-import angular from 'angular';
-import 'angular-mocks';
-import HeroModule from './hero';
-import HeroController from './hero.controller';
-import HeroComponent from './hero.component';
-import HeroTemplate from './hero.html!text';
+import BootyModule from './booty'
+import BootyController from './booty.controller';
+import BootyComponent from './booty.component';
+import BootyTemplate from './booty.html';
 
-describe('Hero', ()=>{
+describe('Booty', ()=>{
 	let $rootScope,
 	makeController;
 	
-	beforeEach(angular.mock.module(HeroModule.name));
-	beforeEach(angular.mock.inject((_$rootScope_)=>{
+	beforeEach(window.module(BootyModule.name));
+	beforeEach(inject((_$rootScope_)=>{
 		$rootScope = _$rootScope_;
-		makeController = ()=> new HeroController();
+		makeController = ()=>{
+			return new BootyController();
+		};
 	}));
 	
 	describe('Module', ()=>{
@@ -39,17 +37,17 @@ describe('Hero', ()=>{
 		// use Regexes to test that you are using the right bindings {{  }}
 		
 		it('should have name in template [REMOVE]', ()=>{
-			expect(HeroTemplate).to.match(/{{\s?vm\.name\s?}}/g);
+			expect(BootyTemplate).to.match(/{{\s?vm\.name\s?}}/g);
 		});
 	});
 	
 	
 	describe('Component', ()=>{
 			// test the component/directive itself
-			let component = HeroComponent();
+			let component = BootyComponent();
 			
 			it('should use the right template',()=>{
-				expect(component.template).to.equal(HeroTemplate);
+				expect(component.template).to.equal(BootyTemplate);
 			});
 			
 			it('should use controllerAs', ()=>{
@@ -57,7 +55,7 @@ describe('Hero', ()=>{
 			});
 			
 			it('should use the right controller', ()=>{
-				expect(component.controller).to.equal(HeroController);
+				expect(component.controller).to.equal(BootyController);
 			});
 	});
 });

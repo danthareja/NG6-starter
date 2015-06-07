@@ -1,12 +1,12 @@
-import angular from 'angular'; // from github
-import uiRouter from 'angular-ui-router'; // explicitly from npm for export
+import angular from 'angular';
+import 'angular-ui-router'; // explicitly from npm for export
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
 
-let myApp = angular.module('app', [
-	uiRouter,
+let appModule = angular.module('app', [
+	'ui.router',
 	Common.name,
 	Components.name
 ])
@@ -19,5 +19,7 @@ let myApp = angular.module('app', [
  */
 
 angular.element(document).ready(()=> {
-  angular.bootstrap(document, [myApp.name])
+  angular.bootstrap(document, [appModule.name])
 });
+
+export default appModule;
