@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import heroComponent from './hero.component'; 
+import heroComponent from './hero.component.js';
 
 let heroModule = angular.module('hero', [
 	'ui.router'

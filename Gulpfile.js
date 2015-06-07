@@ -19,8 +19,7 @@ var root = 'client';
 
 // map of all our paths
 var paths = {
-	// js: resolveToComponents('**/*!(.spec.js).js'), // don't include spec files
-	js: 'app/**/*.js',
+	js: resolveToComponents('**/*!(.spec.js).js'), // don't include spec files
 	css: resolveToApp('**/*.css'), // our css files
 	html: [
 		resolveToApp('**/*.html'),

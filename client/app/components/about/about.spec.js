@@ -2,9 +2,9 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import AboutModule from './about'
-import AboutController from './about.controller';
-import AboutComponent from './about.component';
+import AboutModule from './about.js'
+import AboutController from './about.controller.js';
+import AboutComponent from './about.component.js';
 import AboutTemplate from './about.html!text';
 
 describe('About', ()=>{

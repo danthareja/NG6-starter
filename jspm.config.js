@@ -7,11 +7,10 @@ System.config({
     ]
   },
   "paths": {
-    "*": "*",
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
-  },
-  "defaultJSExtensions": true
+    "*": "*.js",
+    "github:*": "jspm_packages/github/*.js",
+    "npm:*": "jspm_packages/npm/*.js"
+  }
 });
 
 System.config({

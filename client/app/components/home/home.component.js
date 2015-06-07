@@ -1,4 +1,4 @@
-import controller from './home.controller';
+import controller from './home.controller.js';
 import template from './home.html!text';
 import './home.css!';
 

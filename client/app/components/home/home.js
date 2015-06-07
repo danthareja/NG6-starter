@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import homeComponent from './home.component'; 
+import homeComponent from './home.component.js';
 
 let homeModule = angular.module('home', [
 	'ui.router'

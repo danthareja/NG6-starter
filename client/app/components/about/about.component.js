@@ -1,5 +1,5 @@
 import template from './about.html!text';
-import controller from './about.controller';
+import controller from './about.controller.js';
 import './about.css!';
 
 let aboutComponent = function(){

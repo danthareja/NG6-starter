@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import aboutComponent from './about.component'; 
+import aboutComponent from './about.component.js';
 
 let aboutModule = angular.module('about', [
 	'ui.router'

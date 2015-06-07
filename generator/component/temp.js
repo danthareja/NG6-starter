@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import <%= name %>Component from './<%= name %>.component'; 
+import <%= name %>Component from './<%= name %>.component.js';
 
 let <%= name %>Module = angular.module('<%= name %>', [
 	'ui.router'
