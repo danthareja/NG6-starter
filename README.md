@@ -116,8 +116,6 @@ Here's a list of possible Gulp task to run:
   * starts a dev server with `browser-sync` serving the client folder and listens for changes
 * `component`
   * builds out boilerplate for a new angular component, [read below](#generating-components) to see how to use this in more detail
-<!-- * `build`
-  * bundles our app into a production ready file -->
   
 ### Testing
 To run test, just run `npm test` or `karma start`.
