@@ -1,8 +1,8 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import Common from './common/common.js';
-import Components from './components/components.js';
-import AppComponent from './app.component.js';
+import Common from './common/common';
+import Components from './components/components';
+import AppComponent from './app.component';
 import 'normalize.css';
 
 let appModule = angular.module('app', [

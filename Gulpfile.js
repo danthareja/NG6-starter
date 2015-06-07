@@ -5,6 +5,8 @@ var gulp	 		= require('gulp'),
 		serve			= require('browser-sync'),
 		yargs			= require('yargs').argv
 
+var root = 'client';
+
 // helper method to resolveToApp paths
 var resolveTo = function(resolvePath) {
 	return function(glob) {
@@ -15,12 +17,11 @@ var resolveTo = function(resolvePath) {
 
 var resolveToApp = resolveTo('app'); // app/{glob}
 var resolveToComponents = resolveTo('app/components'); // app/components/{glob}
-var root = 'client';
 
 // map of all our paths
 var paths = {
-	js: resolveToComponents('**/*!(.spec.js).js'), // don't include spec files
-	css: resolveToApp('**/*.css'), // our css files
+	js: resolveToApp('**/*.js'),
+	css: resolveToApp('**/*.css'),
 	html: [
 		resolveToApp('**/*.html'),
 		path.join(root, 'index.html')

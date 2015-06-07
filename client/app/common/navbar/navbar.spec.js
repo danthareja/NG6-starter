@@ -2,9 +2,9 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import NavbarModule from './navbar.js';
-import NavbarController from './navbar.controller.js';
-import NavbarComponent from './navbar.component.js';
+import NavbarModule from './navbar';
+import NavbarController from './navbar.controller';
+import NavbarComponent from './navbar.component';
 import NavbarTemplate from './navbar.html!text';
 
 describe('Navbar', ()=>{
